@@ -55,9 +55,13 @@ header > nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 120px;
+	gap: 110px;
 	margin: 150px 77px 0px;
 }
+
+/* .text-container { */
+/* 	margin-right: 10%; */
+/* } */
 
 .text-container > h1 {
 	font-family: Lora, serif;
@@ -70,7 +74,7 @@ header > nav {
 	font-family: Montserrat, sans-serif; 
 	font-size: 24px;
 	font-weight: 400;
-	width: 60%;	
+	width: 400px;	
 	margin-bottom: 48px;
 }
 
@@ -93,7 +97,7 @@ header > nav {
 
 footer * {
 	width: max-content;
-	margin: 80px auto 0px;
+	margin: 200px auto 20px;
 	font-family: Montserrat, sans-serif;
 	font-weight: 500;
 	font-size: 14px;
@@ -106,3 +110,53 @@ footer > p > strong {
 	text-underline-offset: 4px;
 	text-decoration-thickness: 1.5px;
 } 
+
+/* Post Author */
+
+.author {
+	position: relative;
+	border-radius: 8px;
+	box-shadow: 2px 2px 2px black;
+	top: -72px;
+	left: 310px;
+	width: 380px;
+	padding: 30px 15px;
+	padding-left: 26px;
+	padding-top: 15px;
+}
+
+.image-name-pos-container {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-bottom: 10px;
+}
+
+.author-name {
+	font-family: Montserrat, sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.author-position {
+	font-family: Montserrat, sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	color: #828282;
+}
+
+.img-info {
+	font-family: Lora, serif;
+	font-weight: 700;
+	font-size: 24px;
+	width: 290px;
+}
+
+.author-image {
+	width: 50px;	
+}
+
+.author-image > img {
+	border-radius: 100px;
+	width: 100%;
+}
