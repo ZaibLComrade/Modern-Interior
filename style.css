@@ -11,6 +11,10 @@ header {
 	align-items: center;
 }
 
+.icon {
+	display: none;
+}
+
 .header-title {
 	font-family: 'Crimson Pro', serif;
 	font-weight: 200;
@@ -160,3 +164,83 @@ footer > p > strong {
 	border-radius: 100px;
 	width: 100%;
 }
+
+@media screen and (max-width: 960px) and (min-width: 576px) {
+	.nav-list {
+		gap: 20px;
+	}	
+
+	.header-title {
+		margin-left: 35px;
+	}
+
+	.main-container {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	
+	.author {
+		left: 200px;
+	}
+
+	.footer p {
+		margin-top: 60px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.header-title {
+		margin-top: 18px;
+		margin-left: 12px;
+	}
+
+	header nav {
+		display: none;
+	}	
+
+	.icon {
+		display: flex;
+		margin-top: 18px;
+		margin-right: 12px;
+	}
+
+	.main-container {
+		flex-direction: column;
+		align-items: flex-start;
+		margin: 45px 12px 0px;
+		gap: 30px;
+		/* justify-content: flex-start; */
+	}
+	
+	.text-container > h1 {
+		font-size: 36px;	
+		margin-bottom: 25px;
+	}
+
+	.text-container > p {
+		font-size: 14px;
+		width: 250px;
+	}
+
+	.author {
+		left: 10%;
+		width: 290px;
+	}
+
+	.author-name {
+		font-size: 12px;
+	}
+
+	.author-position {
+		font-size: 10px;
+	}
+
+	.img-info {
+		font-size: 18px;
+	}
+	
+	footer > p {
+		margin-top: 120px;	
+	}
+}
+
